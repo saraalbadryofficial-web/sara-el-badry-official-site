@@ -1,6 +1,6 @@
 window.SARA_CONFIG = {
   siteUrl: "https://saraelbadryofficials.com/",
-  ga4Id: "",
+  ga4Id: "G-C1WD3PWF1R",
   metaPixel: "",
 
   supabase: {
@@ -28,7 +28,7 @@ window.SARA_CONFIG = {
     "feal-hob": [],
     "ard-allaza": [],
     "hosn-alshah": [],
-    "om-fi-mohemma": [],
+    "om-fi-mohema": [],
     "fakiha-moharrama": [],
     "qosasat-harir": []
   }
