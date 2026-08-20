@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#30182b">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="description" content="الموقع الرسمي للكاتبة سارة البدري — الكتب، أحدث الأعمال، الأخبار ونادي القراء.">
+<link rel="canonical" href="https://saraelbadryofficials.com/">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="سارة البدري | الموقع الرسمي">
+<meta property="og:description" content="الإصدارات والكتب ونادي قراء سارة البدري.">
+<meta property="og:url" content="https://saraelbadryofficials.com/">
+<meta property="og:site_name" content="Sara El Badry Official">
+<meta name="twitter:card" content="summary_large_image">
+<title>سارة البدري | الموقع الرسمي</title>
+<script src="config.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --ink:#20191f;--cream:#f6efe6;--cream2:#fffaf5;--plum:#30182b;--plum2:#54203d;
+ --wine:#7f263d;--rose:#c33c52;--gold:#c9a768;--muted:#796f76;--line:rgba(48,24,43,.14);
+ --shadow:0 25px 70px rgba(48,24,43,.17);--radius:26px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.75;overflow-x:hidden}
+body.modal-open{overflow:hidden} a{color:inherit;text-decoration:none} button,input,select{font:inherit} button{cursor:pointer}
+.container{width:min(1180px,calc(100% - 34px));margin:auto}
+.skip{position:fixed;top:-60px;right:14px;z-index:999;background:#fff;padding:9px 14px;border-radius:10px} .skip:focus{top:12px}
+
+/* MASTHEAD */
+.masthead{position:relative;min-height:390px;display:flex;align-items:center;overflow:hidden;background:
+ radial-gradient(circle at 82% 30%,rgba(195,60,82,.16),transparent 28%),
+ radial-gradient(circle at 20% 30%,rgba(201,167,104,.16),transparent 25%),
+ linear-gradient(120deg,#f9f1e8 0%,#f0e1d9 46%,#d9c3c3 100%);}
+.masthead:after{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.2) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.16) 1px,transparent 1px);background-size:45px 45px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}
+.mast-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:38px;padding:48px 0}
+.logo-lockup{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.main-logo{width:min(520px,92%);height:auto;display:block;filter:drop-shadow(0 12px 22px rgba(48,24,43,.08))}
+.mast-kicker{color:var(--wine);font-size:12px;font-weight:900;letter-spacing:.15em}
+.mast-copy{max-width:560px;color:#5f5159;font-size:15px}
+.mast-author{display:flex;align-items:center;gap:16px}
+.mast-photo{width:92px;height:92px;border-radius:50%;object-fit:cover;object-position:top;border:4px solid #fff;box-shadow:0 16px 34px rgba(48,24,43,.22);flex-shrink:0}
+.mast-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{border:0;border-radius:999px;padding:13px 20px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}
+.btn:hover{transform:translateY(-2px)} .primary{background:var(--plum);color:#fff;box-shadow:0 12px 26px rgba(48,24,43,.2)} .secondary{border:1px solid rgba(48,24,43,.3);background:rgba(255,255,255,.35);color:var(--plum)}
+.cover-fan{height:290px;position:relative;direction:ltr}
+.fan-cover{position:absolute;bottom:0;width:155px;aspect-ratio:.72;border-radius:8px;overflow:hidden;box-shadow:0 22px 45px rgba(48,24,43,.25);border:2px solid rgba(255,255,255,.7);background:#5b2946;cursor:pointer;transition:box-shadow .2s,filter .2s}
+.fan-cover:hover{box-shadow:0 26px 52px rgba(48,24,43,.35);filter:brightness(1.05)}
+.fan-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.fan-cover:nth-child(1){left:15px;transform:rotate(-10deg) translateY(20px)} .fan-cover:nth-child(2){left:130px;transform:rotate(-4deg) translateY(3px)} .fan-cover:nth-child(3){left:245px;transform:rotate(3deg)} .fan-cover:nth-child(4){left:360px;transform:rotate(9deg) translateY(24px)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:#241610;color:#f7ead9;border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 8px 24px rgba(30,16,12,.08)}
+.nav-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-links{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.nav-links a{padding:11px 13px;border-radius:10px;font-size:13px;font-weight:700;color:#f2e5d4;transition:.2s}
+.nav-links a:hover{background:rgba(255,255,255,.08);color:#fff}
+.nav-brand{height:46px;width:auto;filter:brightness(1.8) saturate(.75)}
+.menu-btn{display:none;border:0;background:transparent;color:white;font-size:24px}
+.drawer{display:none;position:fixed;z-index:70;inset:70px 0 auto;background:#241610;padding:14px;border-top:1px solid rgba(255,255,255,.08)}
+.drawer.open{display:grid;gap:8px} .drawer a{padding:12px 14px;background:rgba(255,255,255,.05);border-radius:10px;color:#fff}
+
+/* SHARED */
+section{padding:88px 0} .kicker{font-size:12px;color:var(--wine);font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+.section-title{font:700 clamp(38px,5vw,68px)/1.05 'Cairo',Georgia,serif;color:var(--plum);margin:5px 0}
+.section-desc{max-width:500px;color:var(--muted);font-size:14px}
+
+/* LATEST */
+.latest{background:var(--cream2)} .latest-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}
+.latest-cover{width:min(350px,100%);justify-self:center;position:relative;cursor:pointer}
+.latest-cover img{width:100%;aspect-ratio:.72;object-fit:cover;border-radius:8px;display:block;box-shadow:var(--shadow);transition:.25s}
+.latest-cover:hover img{transform:translateY(-6px);box-shadow:0 30px 80px rgba(48,24,43,.25)}
+.latest-cover:before{content:"أحدث إصدار";position:absolute;right:-24px;top:28px;background:var(--wine);color:#fff;padding:8px 12px;border-radius:99px;font-size:11px;font-weight:800;z-index:2}
+.latest-copy h1{font:700 clamp(48px,7vw,88px)/1 'Cairo',Georgia,serif;color:var(--plum);margin:8px 0 20px}
+.latest-copy p{color:#665b62;max-width:650px} .stats{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0} .stat{border:1px solid var(--line);background:#fff;padding:8px 12px;border-radius:999px;font-size:12px}
+
+/* BOOKS */
+.books{background:#efe4da} .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px} .filter{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:999px;font-weight:700;font-size:12px} .filter.active{background:var(--plum);color:#fff}
+.book-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px} .book-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 14px 34px rgba(48,24,43,.07);transition:.22s;display:flex;flex-direction:column} .book-card:hover{transform:translateY(-6px)}
+.book-img{aspect-ratio:.72;background:#64324f;overflow:hidden;cursor:pointer} .book-img img{width:100%;height:100%;object-fit:cover;display:block;transition:.25s} .book-img:hover img{transform:scale(1.05)}
+.book-body{padding:15px} .book-body small{color:var(--muted);font-size:11px} .book-body h3{font:700 25px/1.2 'Cairo',Georgia,serif;color:var(--plum);margin:7px 0 12px} .book-body .btn{width:100%;padding:10px;font-size:12px}
+
+/* JOURNEY */
+.journey{background:var(--plum);color:#fff} .journey .kicker{color:#e8b8c1} .journey .section-title{color:#fff} .journey .section-desc{color:#d7cad2}
+.timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:11px} .time-item{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);border-radius:17px;padding:15px;min-height:120px} .time-item b{font:700 25px 'Cairo',Georgia,serif;color:#e7c78b} .time-item span{display:block;color:#f0e6eb;font-size:12px;margin-top:8px}
+
+/* ABOUT */
+.about{background:var(--cream2)} .about-panel{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px;align-items:center}
+.about-mark{min-height:430px;border-radius:28px;background:
+ radial-gradient(circle at 50% 35%,rgba(195,60,82,.15),transparent 33%),
+ linear-gradient(135deg,#efe0da,#d5bec8);display:grid;place-items:center;box-shadow:var(--shadow);overflow:hidden}
+.about-mark img{width:100%;height:100%;object-fit:cover;object-position:top} .about-copy h2{font:700 clamp(44px,6vw,74px)/1.05 'Cairo',Georgia,serif;color:var(--plum);margin:9px 0 22px}
+.about-copy p{color:#655960} .quote{border-right:3px solid var(--wine);padding:7px 18px 7px 0;margin:24px 0;font:400 21px/1.8 'Cairo',Georgia,serif;color:var(--plum)}
+
+/* CLUB */
+.club{background:var(--cream)} .club-card{border-radius:34px;background:radial-gradient(circle at 12% 10%,rgba(201,167,104,.2),transparent 25%),linear-gradient(135deg,#31192c,#62223d 58%,#87324a);color:#fff;padding:clamp(34px,6vw,70px)}
+.club-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center} .club h2{font:700 clamp(42px,6vw,72px)/1.1 'Cairo',Georgia,serif;margin:8px 0 18px} .club p{color:#ebdfe6}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px} .pill{border:1px solid rgba(255,255,255,.22);padding:8px 12px;border-radius:99px;font-size:12px}
+.form{background:rgba(255,255,255,.1);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:23px;padding:22px} .form label{display:block;font-size:11px;color:#eadfe6;margin-bottom:6px} .form input,.form select{width:100%;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);color:#fff;border-radius:13px;padding:12px 13px;margin-bottom:10px;outline:none} .form input::placeholder{color:rgba(255,255,255,.55)} .form select option{color:#222} .form .btn{width:100%;background:#f7efe7;color:var(--plum)} .form-status{font-size:12px;min-height:22px;margin-top:8px} .honeypot{position:absolute;left:-9999px}
+
+/* FOOTER */
+footer{background:#1f1418;color:#eee1e6;padding:42px 0 24px} .footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px} .footer-logo{width:250px;max-width:55%;filter:brightness(1.8)} .footer-links{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:#d7c8cf} .copyright{font-size:11px;color:#9f8f97;margin-top:25px;border-top:1px solid rgba(255,255,255,.08);padding-top:18px}
+
+/* MODAL */
+.modal{display:none;position:fixed;z-index:100;inset:0;background:rgba(20,10,17,.72);padding:18px;align-items:center;justify-content:center} .modal.open{display:flex} .modal-card{width:min(920px,100%);max-height:90vh;overflow:auto;background:var(--cream2);border-radius:24px;box-shadow:0 40px 100px rgba(0,0,0,.35)} .modal-close{position:sticky;top:12px;float:left;margin:12px;border:0;width:39px;height:39px;border-radius:50%;background:var(--plum);color:#fff;z-index:2} .modal-content{display:grid;grid-template-columns:310px 1fr;gap:34px;padding:30px} .modal-cover{aspect-ratio:.72;border-radius:9px;overflow:hidden;background:#6a3152} .modal-cover img{width:100%;height:100%;object-fit:cover} .modal-content h2{font:700 44px/1.1 'Cairo',Georgia,serif;color:var(--plum);margin:10px 0} .modal-meta{color:var(--muted);font-size:12px} .buy-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.toast{position:fixed;left:18px;bottom:18px;z-index:120;background:#fff;color:var(--plum);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:14px;padding:13px 15px;transform:translateY(160%);transition:.3s;max-width:330px;font-size:12px} .toast.show{transform:translateY(0)}
+
+@media(max-width:1000px){
+ .mast-grid,.latest-grid,.about-panel,.club-layout{grid-template-columns:1fr} .cover-fan{max-width:540px;margin:auto;width:100%}
+ .book-grid{grid-template-columns:repeat(2,1fr)} .timeline{grid-template-columns:repeat(3,1fr)} .section-head{align-items:flex-start;flex-direction:column}
+ .nav-links{display:none} .menu-btn{display:block} .modal-content{grid-template-columns:240px 1fr}
+}
+@media(max-width:620px){
+ .container{width:min(100% - 24px,1180px)} .masthead{min-height:520px} .mast-grid{padding:34px 0} .main-logo{width:92%} .cover-fan{height:225px;transform:scale(.83);transform-origin:center}
+ .mast-photo{width:68px;height:68px} .mast-author{gap:12px}
+ .fan-cover{width:135px} .fan-cover:nth-child(2){left:105px} .fan-cover:nth-child(3){left:210px} .fan-cover:nth-child(4){left:315px}
+ .nav-inner{min-height:62px} .nav-brand{height:38px} section{padding:64px 0} .book-grid{grid-template-columns:1fr 1fr;gap:10px} .book-body{padding:12px} .book-body h3{font-size:20px}
+ .timeline{grid-template-columns:repeat(2,1fr)} .about-mark{min-height:310px} .club-card{padding:28px 18px;border-radius:24px} .footer-top{flex-direction:column;align-items:flex-start}
+ .modal{padding:8px} .modal-content{grid-template-columns:1fr;padding:20px} .modal-cover{width:210px;margin:auto} .modal-content h2{font-size:34px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+.book-body .mini-blurb{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 13px;min-height:42px}
+.book-meta-row{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 8px}
+.meta-chip{font-size:11px;padding:7px 9px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted)}
+.book-blurb{font-size:15px;line-height:1.95;color:#4d4249;margin:15px 0 4px}
+.where-title{font-size:13px;font-weight:900;color:var(--plum);margin-top:20px;margin-bottom:8px}
+.buy-links .btn{font-size:11px;padding:9px 12px}
+.buy-links .btn.read{background:#fff;color:var(--plum);border:1px solid var(--line)}
+.buy-links .btn.alt{background:#efe4da;color:var(--plum);border:1px solid #dbcbbd}
+.availability-note{font-size:11px;color:var(--muted);line-height:1.7;margin-top:10px}
+.source-note{font-size:10px;color:#8b7c85;margin-top:14px}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">تخطّي إلى المحتوى</a>
+
+<header class="masthead" id="top">
+ <div class="container mast-grid">
+   <div class="logo-lockup">
+     <img class="main-logo" src="assets/logo.png" alt="سارة البدري - كاتبة">
+     <div class="mast-author">
+       <img class="mast-photo" src="assets/sara-author.jpg" alt="سارة البدري">
+       <div>
+         <div class="mast-kicker">الموقع الرسمي · SARA EL BADRY</div>
+         <p class="mast-copy">كل كتب سارة، أحدث الأخبار، ومساحة قريبة من القرّاء في مكان واحد.</p>
+       </div>
+     </div>
+     <div class="mast-actions">
+       <a class="btn primary track" data-event="mast_latest_click" href="#latest">أحدث إصدار</a>
+       <a class="btn secondary track" data-event="mast_books_click" href="#books">تصفّح الكتب</a>
+     </div>
+   </div>
+   <div class="cover-fan" id="coverFan" aria-label="مختارات من كتب سارة البدري"></div>
+ </div>
+</header>
+
+<nav class="nav" aria-label="التنقل الرئيسي">
+ <div class="container nav-inner">
+   <img class="nav-brand" src="assets/logo.png" alt="سارة البدري">
+   <div class="nav-links">
+     <a href="#top">الرئيسية</a><a href="#latest">أحدث إصدار</a><a href="#books">الكتب</a><a href="#journey">من كتاب لكتاب</a><a href="#about">عن سارة</a><a href="#club">نادي القراء</a>
+   </div>
+   <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-label="فتح القائمة">☰</button>
+ </div>
+</nav>
+<div id="drawer" class="drawer">
+ <a href="#top">الرئيسية</a><a href="#latest">أحدث إصدار</a><a href="#books">الكتب</a><a href="#journey">من كتاب لكتاب</a><a href="#about">عن سارة</a><a href="#club">نادي القراء</a>
+</div>
+
+<main id="main">
+<section class="latest" id="latest">
+ <div class="container latest-grid">
+   <div class="latest-cover" onclick="openBook('ibnat-habil')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openBook('ibnat-habil')"><img id="latestCover" src="assets/covers/ibnat-habil.jpg" alt="غلاف ابنة هابيل"></div>
+   <div class="latest-copy">
+     <div class="kicker">LATEST RELEASE · 2026</div>
+     <h1>ابنة هابيل</h1>
+     <p>أحدث روايات سارة البدري؛ حكاية عن القبول، صورتنا عن أنفسنا، وما الذي يحدث حين تختلط الحقيقة بالمشاعر.</p>
+     <div class="stats"><span class="stat">إصدار 2026</span><span class="stat">388 صفحة</span><span class="stat">الرواق للنشر والتوزيع</span></div>
+     <div class="mast-actions">
+       <button class="btn primary" onclick="openBook('ibnat-habil')">عن الكتاب</button>
+       <a class="btn secondary" href="https://alrewaqpublishing.com/product/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/" target="_blank" rel="noopener" onclick="track('click_buy',{book_id:'ibnat-habil',book_name:'ابنة هابيل',channel:'الرواق'})">شراء ورقي</a>
+       <a class="btn secondary" href="https://www.abjjad.com/book/1034086383618/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/1033785737218" target="_blank" rel="noopener" onclick="track('click_buy',{book_id:'ibnat-habil',book_name:'ابنة هابيل',channel:'أبجد'})">قراءة إلكترونية</a>
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="books" id="books">
+ <div class="container">
+   <div class="section-head">
+     <div><div class="kicker">THE BOOKS</div><h2 class="section-title">مكتبة سارة</h2></div>
+     <p class="section-desc">اختاري كتابًا، شوفي فكرته بسرعة، واعرفي تلاقيه فين ورقي أو إلكتروني.</p>
+   </div>
+   <div class="filters">
+     <button class="filter active" data-filter="all">الكل</button>
+     <button class="filter" data-filter="novel">روايات</button>
+     <button class="filter" data-filter="stories">قصص</button>
+     <button class="filter" data-filter="other">كتب أخرى</button>
+   </div>
+   <div class="book-grid" id="bookGrid"></div>
+ </div>
+</section>
+
+<section class="journey" id="journey">
+ <div class="container">
+   <div class="section-head">
+     <div><div class="kicker">2012 — 2026</div><h2 class="section-title">من كتاب لكتاب</h2></div>
+     <p class="section-desc">من أول كتاب لحد أحدث إصدار — السنوات والعناوين في نظرة واحدة.</p>
+   </div>
+   <div class="timeline" id="timeline"></div>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="container about-panel">
+   <div class="about-mark"><img src="assets/sara-author.jpg" alt="سارة البدري - كاتبة" loading="lazy"></div>
+   <div class="about-copy">
+     <div class="kicker">ABOUT SARA</div>
+     <h2>سارة البدري.</h2>
+     <p>كاتبة مصرية تجمع بين خلفية هندسية ودراسة اللغة العربية، وكتاباتها تتحرك بين الرواية والقصة والسينما وتجارب الحياة اليومية.</p>
+     <div class="quote">هنا تقدر تبدأ من أي كتاب، وتكمل الحكاية بالطريقة اللي تناسبك.</div>
+     <a class="btn secondary" href="#club">انضم لنادي القراء</a>
+   </div>
+ </div>
+</section>
+
+<section class="club" id="club">
+ <div class="container">
+   <div class="club-card">
+     <div class="club-layout">
+       <div>
+         <div class="kicker" style="color:#f0c3cb">SARA'S READERS · GCC</div>
+         <h2>كوني أقرب<br>للحكاية.</h2>
+         <p>إصدارات جديدة، لقاءات ومحتوى خاص — مع حفظ مصدر كل تسجيل والحملة والدولة تلقائيًا.</p>
+         <div class="pills"><span class="pill">🇸🇦 السعودية</span><span class="pill">🇦🇪 الإمارات</span><span class="pill">🇰🇼 الكويت</span><span class="pill">🇶🇦 قطر</span></div>
+       </div>
+       <form class="form" id="readerForm">
+         <label for="name">الاسم</label><input id="name" name="name" required placeholder="اسمك">
+         <label for="email">البريد الإلكتروني</label><input id="email" type="email" name="email" required placeholder="name@example.com">
+         <label for="country">الدولة</label>
+         <select id="country" name="country" required>
+           <option value="">اختاري الدولة</option><option>السعودية</option><option>الإمارات</option><option>الكويت</option><option>قطر</option><option>مصر</option><option>أخرى</option>
+         </select>
+         <input class="honeypot" name="website" tabindex="-1" autocomplete="off">
+         <button class="btn" type="submit">انضم لنادي القراء</button>
+         <div class="form-status" id="formStatus" aria-live="polite"></div>
+         <small>بالتسجيل أنتِ توافقين على استخدام البيانات للتواصل المتعلق بإصدارات ومحتوى سارة. <a href="privacy.html" style="text-decoration:underline">الخصوصية</a></small>
+       </form>
+     </div>
+   </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+   <div class="footer-top">
+     <img class="footer-logo" src="assets/logo.png" alt="سارة البدري">
+     <div class="footer-links">
+       <a id="igLink" target="_blank" rel="noopener">Instagram</a>
+       <a id="fbLink" target="_blank" rel="noopener">Facebook</a>
+       <a id="ttLink" target="_blank" rel="noopener">TikTok</a>
+       <a href="#books">الكتب</a><a href="#club">نادي القراء</a><a href="privacy.html">الخصوصية</a>
+     </div>
+   </div>
+   <div class="copyright">© 2026 Sara El Badry · saraelbadryofficials.com</div>
+ </div>
+</footer>
+
+<div class="modal" id="bookModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+ <div class="modal-card">
+   <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+   <div class="modal-content" id="modalContent"></div>
+ </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const CFG = window.SARA_CONFIG || {};
+const books = [{"id":"ibnat-habil","title":"ابنة هابيل","year":2026,"type":"novel","typeLabel":"رواية","pages":388,"isbn":"9789778243314","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/ibnat-habil.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2026/02/07010913/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%842-.png","blurb":"رقية وصفية، اختلاف واضح بينهما، وحكاية تدخل إلى منطقة القبول وكراهية الذات والخط الفاصل بين الحقيقة وما نشعر به.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/1034086383618/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/1033785737218","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/79127/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84","kind":"alt"},{"label":"نيل وفرات · ورقي","url":"https://www.neelwafurat.com/itempage.aspx?id=egb320247-5341404&search=books","kind":"alt"}]},{"id":"insan-tabia-iphone","title":"الإنسان والطبيعة والآيفون","year":2024,"type":"stories","typeLabel":"مجموعة قصصية","pages":178,"isbn":"9789778241853","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/insan-tabia-iphone.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2024/01/25234011/20.jpg","blurb":"قصص قصيرة تنظر إلى الإنسان بعد أن دخلت التكنولوجيا يومه بقوة، وما الذي خسرناه في علاقتنا بالطبيعة وبأنفسنا.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D9%81%D9%88%D9%86/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2809528323/%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D9%8A%D9%81%D9%88%D9%86/2810576899","kind":"read"},{"label":"بيت الكتب · تنبيه عند التوفر","url":"https://www.thebookhome.com/product/index/64952/%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86-%D9%88%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9-%D9%88%D8%A7%D9%84%D8%A2%D9%8A%D9%81%D9%88%D9%86","kind":"alt"},{"label":"نيل وفرات · ورقي","url":"https://www.neelwafurat.com/itempage.aspx?id=egb295514-5314954&search=books","kind":"alt"}]},{"id":"nesf-hay","title":"النصف الحي","year":2022,"type":"novel","typeLabel":"رواية","pages":211,"isbn":"9789778241341","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/nesf-hay.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2022/01/09023737/elnesf.jpg","blurb":"رواية عن الكراهية والبحث عن الذات والحرية، وما الذي يحدث حين يصبح جزء من الإنسان حيًا والجزء الآخر عالقًا.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%A7%D9%84%D9%86%D8%B5%D9%81-%D8%A7%D9%84%D8%AD%D9%8A/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2774007815/%D8%A7%D9%84%D9%86%D8%B5%D9%81-%D8%A7%D9%84%D8%AD%D9%8A/2775056391","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/52718/%D8%A7%D9%84%D9%86%D8%B5%D9%81-%D8%A7%D9%84%D8%AD%D9%89","kind":"alt"}]},{"id":"al-mashhad","title":"المشهد","year":2020,"type":"other","typeLabel":"كتاب عن السينما","pages":245,"isbn":"9789778240801","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/al-mashhad.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2020/02/09024756/alrewaq-40_optimized.jpg","blurb":"مشاهد من أفلام نعرفها، لكن بنظرة ثانية؛ الكتاب يرجع للسينما لا ليستعيد الفيلم كله، بل ليلتقط معنى مختبئًا في مشهد.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2771746819/%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF-%D9%85%D8%B4%D8%A7%D9%87%D8%AF-%D8%AE%D8%A7%D8%B5%D8%A9-%D9%85%D9%86-%D8%B0%D8%A7%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D9%85%D8%A7/2772795395","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/39706/%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF-%D9%85%D8%B4%D8%A7%D9%87%D8%AF-%D8%AE%D8%A7%D8%B5%D8%A9-%D9%85%D9%86-%D8%B0%D8%A7%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D9%85%D8%A7","kind":"alt"}]},{"id":"mahma-sajad","title":"مهما سجد","year":2019,"type":"novel","typeLabel":"رواية","pages":271,"isbn":"9789778240504","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/mahma-sajad.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2019/01/09024408/alrewaq-158.jpg","blurb":"أبواب مقفولة من سنين، ومحاولة للرجوع وتصحيح ما يمكن تصحيحه؛ رواية نفسية اجتماعية عن السقوط والعودة.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D9%85%D9%87%D9%85%D8%A7-%D8%B3%D8%AC%D8%AF/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2772303873/%D9%85%D9%87%D9%85%D8%A7-%D8%B3%D8%AC%D8%AF/2773352449","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/32897/%D9%85%D9%87%D9%85%D8%A7-%D8%B3%D8%AC%D8%AF","kind":"alt"}]},{"id":"feal-hob","title":"فعل حب","year":2017,"type":"stories","typeLabel":"مجموعة قصصية","pages":125,"isbn":"9789775153913","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/feal-hob.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2017/02/09024259/alrewaq-129.jpg","blurb":"قصص واقعية تدخل إلى المساحات التي لا نقولها بسهولة في العلاقات، وتعرض نفس الصورة من زوايا مختلفة.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D9%81%D8%B9%D9%84-%D8%AD%D8%A8/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2768666632/%D9%81%D8%B9%D9%84-%D8%AD%D8%A8/2769715208","kind":"read"}]},{"id":"ard-allaza","title":"أرض اللذة","year":2016,"type":"novel","typeLabel":"رواية","pages":339,"isbn":"9789775153791","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/ard-allaza.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2016/01/09024256/alrewaq-13.jpg","blurb":"مخطوطة قديمة تفتح لمروان باب عالم غامض، ومع البحث فيها يبدأ في اكتشاف حقيقة أقرب إليه مما كان يتوقع.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%84%D8%B0%D8%A9/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2768764944/%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%84%D8%B0%D8%A9/2769813520","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/20121/%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D9%84%D8%B0%D8%A9","kind":"alt"}]},{"id":"hosn-alshah","title":"حصن الشاه","year":2014,"type":"novel","typeLabel":"رواية","pages":399,"isbn":"9789775153524","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/hosn-alshah.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2014/01/09024803/alrewaq-72_optimized.jpg","blurb":"بيت كبير، سلطة عائلية ثقيلة، وشخصيات تحاول أن تختار حياتها بنفسها بين القاهرة والولايات المتحدة.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D8%AD%D8%B5%D9%86-%D8%A7%D9%84%D8%B4%D8%A7%D8%A9/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2771845122/%D8%AD%D8%B5%D9%86-%D8%A7%D9%84%D8%B4%D8%A7%D9%87/2772893698","kind":"read"},{"label":"بيت الكتب · تنبيه عند التوفر","url":"https://www.thebookhome.com/product/index/12791/%D8%AD%D8%B5%D9%86-%D8%A7%D9%84%D8%B4%D8%A7%D9%87","kind":"alt"}]},{"id":"om-fi-mohemma","title":"أم في مهمة","year":2013,"type":"other","typeLabel":"كتاب","pages":243,"isbn":"9789775123272","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/om-fi-mohemma.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2013/01/09024125/om.jpg","blurb":"من قبل الحمل لحد مدرسة الطفل؛ تجربة أمومة مكتوبة بقرب وبساطة، بين المسؤولية والطموح وتفاصيل الحياة اليومية.","links":[{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2768666625/%D8%A7%D9%85-%D9%81%D9%8A-%D9%85%D9%87%D9%85%D8%A9-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%AD%D9%85%D9%84-%D9%88%D8%AD%D8%AA%D9%89-%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D8%A7%D9%84%D8%B7%D9%81%D9%84/2769715201","kind":"read"},{"label":"نيل وفرات · ورقي","url":"https://www.neelwafurat.com/itempage.aspx?id=egb186589-5199531&search=books","kind":"alt"},{"label":"الرواق · صفحة كتب سارة","url":"https://alrewaqpublishing.com/product-tag/%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%D9%8A/","kind":"alt"}]},{"id":"fakiha-moharrama","title":"فاكهة محرمة","year":2012,"type":"novel","typeLabel":"رواية","pages":328,"isbn":"9789775153210","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/fakiha-moharrama.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2012/01/09024825/alrewaq-124_optimized.jpg","blurb":"حياة مستقرة تتقلب فجأة حين تظهر علاقة قديمة وغريبة بين رجل أعمال ومنافسته، وتبدأ الموازين في التغيّر.","links":[{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2768732168/%D9%81%D8%A7%D9%83%D9%87%D8%A9-%D9%85%D8%AD%D8%B1%D9%85%D8%A9/2769780744","kind":"read"},{"label":"بيت الكتب · تنبيه عند التوفر","url":"https://www.thebookhome.com/product/index/10620/%D9%81%D8%A7%D9%83%D9%87%D9%87-%D9%85%D8%AD%D8%B1%D9%85%D8%A9","kind":"alt"},{"label":"الرواق · صفحة كتب سارة","url":"https://alrewaqpublishing.com/product-tag/%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A8%D8%AF%D8%B1%D9%8A/","kind":"alt"}]},{"id":"qosasat-harir","title":"قصاصة حرير","year":2012,"type":"novel","typeLabel":"رواية","pages":279,"isbn":"9789775153173","publisher":"الرواق للنشر والتوزيع","local":"assets/covers/qosasat-harir.jpg","remote":"https://d11v1jq8owgw3u.cloudfront.net/wp-content/uploads/2012/01/09024809/alrewaq-132_optimized.jpg","blurb":"يسر بين ضغط الواقع وحب قديم يعود من جديد؛ رواية عن الاختيار والخوف والفرص التي نظن أنها الأخيرة.","links":[{"label":"الرواق · شراء ورقي","url":"https://alrewaqpublishing.com/product/%D9%82%D8%B5%D8%A7%D8%B5%D8%A9-%D8%AD%D8%B1%D9%8A%D8%B1/","kind":"paper"},{"label":"أبجد · قراءة إلكترونية","url":"https://www.abjjad.com/book/2170946946/%D9%82%D8%B5%D8%A7%D8%B5%D8%A9-%D8%AD%D8%B1%D9%8A%D8%B1/2171143555","kind":"read"},{"label":"بيت الكتب · متاح","url":"https://www.thebookhome.com/product/index/10621/%D9%82%D8%B5%D8%A7%D8%B5%D8%A9-%D8%AD%D8%B1%D9%8A%D8%B1","kind":"alt"},{"label":"نيل وفرات · ورقي","url":"https://www.neelwafurat.com/itempage.aspx?id=egb181778-5194540&search=books","kind":"alt"}]}];
+
+function coverFallback(book){return `assets/covers/${book.id}-fallback.svg`}
+function setSmartImage(img,book){
+  const candidates=[book.local,book.remote,coverFallback(book)].filter(Boolean);
+  let i=0;
+  const loadNext=()=>{
+    if(i>=candidates.length){img.onerror=null;return;}
+    img.src=candidates[i++];
+  };
+  img.onerror=loadNext;
+  loadNext();
+}
+
+function injectTracking(){
+  if(CFG.ga4Id){
+    const s=document.createElement("script");s.async=true;s.src=`https://www.googletagmanager.com/gtag/js?id=${CFG.ga4Id}`;document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",CFG.ga4Id);
+  }
+  if(CFG.metaPixel){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init",CFG.metaPixel);fbq("track","PageView");
+  }
+}
+function track(name,params={}){
+ console.log("TRACK",name,params);
+ if(window.gtag)gtag("event",name,params);
+ if(window.fbq){
+   if(name==="view_book")fbq("track","ViewContent",params);
+   else if(name==="generate_lead")fbq("track","Lead",params);
+   else fbq("trackCustom",name,params);
+ }
+}
+
+function renderFan(){
+ const fan=document.getElementById("coverFan");
+ const featured=books.slice(0,4);
+ featured.forEach((b,i)=>{
+  const d=document.createElement("div");d.className="fan-cover";d.style.zIndex=featured.length-i;d.setAttribute("role","button");d.setAttribute("tabindex","0");d.setAttribute("aria-label",`عرض تفاصيل ${b.title}`);
+  const img=document.createElement("img");img.alt=`غلاف ${b.title}`;d.appendChild(img);setSmartImage(img,b);
+  d.addEventListener("click",()=>openBook(b.id));d.addEventListener("keydown",e=>{if(e.key==="Enter")openBook(b.id)});
+  fan.appendChild(d);
+ });
+}
+
+function renderBooks(filter="all"){
+ const grid=document.getElementById("bookGrid");grid.innerHTML="";
+ books.filter(b=>filter==="all"||b.type===filter).forEach(b=>{
+   const card=document.createElement("article");card.className="book-card";
+   card.innerHTML=`<div class="book-img" role="button" tabindex="0" aria-label="عرض تفاصيل ${b.title}"><img alt="غلاف ${b.title}"></div><div class="book-body"><small>${b.typeLabel} · ${b.year}</small><h3>${b.title}</h3><p class="mini-blurb">${b.blurb}</p><button class="btn secondary" onclick="openBook('${b.id}')">اعرفي أكتر</button></div>`;
+   setSmartImage(card.querySelector("img"),b);
+   const cover=card.querySelector(".book-img");
+   cover.addEventListener("click",()=>openBook(b.id));
+   cover.addEventListener("keydown",e=>{if(e.key==="Enter")openBook(b.id)});
+   grid.appendChild(card);
+ });
+}
+
+function renderTimeline(){
+ document.getElementById("timeline").innerHTML=books.map(b=>`<div class="time-item"><b>${b.year}</b><span>${b.title}</span></div>`).join("");
+}
+
+function openBook(id){
+ const b=books.find(x=>x.id===id);if(!b)return;
+ const custom=(CFG.buyLinks&&CFG.buyLinks[id])||[];
+ const allLinks=[...(b.links||[]),...custom];
+ const buyHtml=allLinks.length?allLinks.map((x,i)=>{
+   const cls=x.kind==="read"?"btn read":x.kind==="alt"?"btn alt":"btn primary";
+   return `<a class="${cls}" href="${x.url}" target="_blank" rel="noopener" onclick="track('click_buy',{book_id:'${b.id}',book_name:'${b.title}',channel:'${x.label||("link_"+i)}'})">${x.label||"افتح الرابط"}</a>`;
+ }).join(""):`<span class="availability-note">هنضيف أماكن التوفر أول ما نعتمدها.</span>`;
+ const c=document.getElementById("modalContent");
+ c.innerHTML=`<div class="modal-cover"><img alt="غلاف ${b.title}"></div><div><div class="kicker">${b.typeLabel} · ${b.year}</div><h2 id="modalTitle">${b.title}</h2><div class="modal-meta">سارة البدري · ${b.publisher}</div><div class="book-meta-row"><span class="meta-chip">${b.pages} صفحة</span><span class="meta-chip">ISBN ${b.isbn}</span></div><p class="book-blurb">${b.blurb}</p><div class="where-title">تلاقيه فين؟</div><div class="buy-links">${buyHtml}</div><div class="availability-note">التوفر والأسعار ممكن يتغيروا من متجر لمتجر، لذلك الرابط بيفتح لك الحالة الحالية مباشرة.</div></div>`;
+ setSmartImage(c.querySelector("img"),b);
+ const m=document.getElementById("bookModal");m.classList.add("open");m.setAttribute("aria-hidden","false");document.body.classList.add("modal-open");
+ track("view_book",{book_id:b.id,book_name:b.title,book_year:b.year,book_type:b.typeLabel});
+}
+function closeModal(){const m=document.getElementById("bookModal");m.classList.remove("open");m.setAttribute("aria-hidden","true");document.body.classList.remove("modal-open")}
+
+async function submitReader(form){
+ const st=document.getElementById("formStatus");st.textContent="جاري التسجيل…";
+ const fd=new FormData(form);if(fd.get("website"))return;
+ const q=new URLSearchParams(location.search);
+ const payload={
+  name:String(fd.get("name")||"").trim(),email:String(fd.get("email")||"").trim().toLowerCase(),country:String(fd.get("country")||""),
+  utm_source:q.get("utm_source"),utm_medium:q.get("utm_medium"),utm_campaign:q.get("utm_campaign"),utm_content:q.get("utm_content"),utm_term:q.get("utm_term"),
+  referrer:document.referrer||null,landing_page:location.pathname+location.search
+ };
+ if(!CFG.supabase?.url||!CFG.supabase?.anonKey){
+   console.log("PREVIEW LEAD",payload);st.textContent="✓ النموذج جاهز. بعد وضع بيانات Supabase في config.js يبدأ الحفظ الفعلي.";track("generate_lead",{country:payload.country,mode:"preview"});form.reset();return;
+ }
+ try{
+   const r=await fetch(`${CFG.supabase.url}/rest/v1/${CFG.supabase.table||"readers"}`,{method:"POST",headers:{"Content-Type":"application/json","apikey":CFG.supabase.anonKey,"Authorization":`Bearer ${CFG.supabase.anonKey}`,"Prefer":"return=minimal"},body:JSON.stringify(payload)});
+   if(!r.ok)throw new Error("insert_failed");
+   st.textContent="✓ تم التسجيل بنجاح";track("generate_lead",{country:payload.country});form.reset();
+ }catch(e){console.error(e);st.textContent="تعذر التسجيل الآن. جرّبي مرة أخرى بعد قليل."}
+}
+
+function setupScroll(){
+ const marks=[25,50,75,90],sent=new Set();
+ addEventListener("scroll",()=>{const max=document.documentElement.scrollHeight-innerHeight;if(max<=0)return;const p=Math.round(scrollY/max*100);marks.forEach(m=>{if(p>=m&&!sent.has(m)){sent.add(m);track("scroll_depth",{percent:m})}})},{passive:true});
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+ injectTracking();renderFan();renderBooks();renderTimeline();setSmartImage(document.getElementById("latestCover"),books[0]);
+
+ document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));btn.classList.add("active");renderBooks(btn.dataset.filter);track("filter_books",{filter:btn.dataset.filter});
+ }));
+ document.querySelectorAll(".track").forEach(el=>el.addEventListener("click",()=>track(el.dataset.event||"click")));
+ document.getElementById("readerForm").addEventListener("submit",e=>{e.preventDefault();submitReader(e.target)});
+ document.getElementById("modalClose").addEventListener("click",closeModal);document.getElementById("bookModal").addEventListener("click",e=>{if(e.target.id==="bookModal")closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+ const btn=document.getElementById("menuBtn"),drawer=document.getElementById("drawer");btn.addEventListener("click",()=>{const open=drawer.classList.toggle("open");btn.setAttribute("aria-expanded",String(open))});drawer.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{drawer.classList.remove("open");btn.setAttribute("aria-expanded","false")}));
+ const s=CFG.socials||{};const ig=document.getElementById("igLink"),fb=document.getElementById("fbLink"),tt=document.getElementById("ttLink");
+ if(s.instagram){ig.href=s.instagram;ig.addEventListener("click",()=>track("social_instagram"))}else ig.style.display="none";
+ if(s.facebook){fb.href=s.facebook;fb.addEventListener("click",()=>track("social_facebook"))}else fb.style.display="none";
+ if(s.tiktok){tt.href=s.tiktok;tt.addEventListener("click",()=>track("social_tiktok"))}else tt.style.display="none";
+ setupScroll();
+});
+</script>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"سارة البدري",
+ "url":"https://saraelbadryofficials.com/",
+ "sameAs":["https://instagram.com/saraelbadryofficial","https://www.facebook.com/saraelbadryofficial","https://www.tiktok.com/@saraelbadryofficial"]
+}
+</script>
+</body>
+</html>

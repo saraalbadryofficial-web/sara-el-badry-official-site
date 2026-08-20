@@ -1,0 +1,55 @@
+سارة البدري — FINAL PRODUCTION
+===============================
+
+الدومين:
+https://saraelbadryofficials.com/
+
+ارفعي محتويات هذا الفولدر إلى GitHub كما هي.
+لا ترفعي ملف ZIP نفسه.
+
+الملفات الرئيسية:
+- index.html            الموقع
+- config.js             الملف الوحيد الذي سنضع فيه GA4 / Pixel / Supabase
+- privacy.html          سياسة الخصوصية
+- thank-you.html        صفحة شكر جاهزة
+- supabase.sql          قاعدة بيانات نادي القراء
+- sitemap.xml / robots.txt / _headers
+- assets/logo.png       اللوجو الأصلي الذي تم رفعه
+- assets/covers/        11 غلاف fallback محلي
+
+Cloudflare Pages:
+1) Workers & Pages
+2) Create application / Pages
+3) Connect to Git
+4) اختاري Repository
+5) Framework preset: None
+6) Build command: فارغ
+7) Build output directory: /
+8) Deploy
+9) Custom domains > saraelbadryofficials.com
+
+الصور:
+- الموقع يحاول إظهار غلاف دار الرواق الأصلي.
+- إذا الرابط الخارجي تعذر لأي سبب، ينتقل فورًا إلى غلاف محلي داخل المشروع.
+- لذلك لا يظهر Broken Image.
+- اللوجو نفسه موجود محليًا ومستخدم في الـMasthead وNavigation وFooter.
+
+Tracking:
+افتحي config.js فقط وضعي:
+ga4Id
+metaPixel
+Supabase URL
+Supabase anon key
+
+الموقع يعمل حتى قبل إضافة هذه القيم.
+
+
+تحديث إضافي:
+- تم تضمين غلاف «ابنة هابيل» الفعلي محليًا داخل assets/covers/ibnat-habil.jpg
+- هذا الغلاف هو المستخدم أساسيًا في الـMasthead وقسم أحدث إصدار وصفحة الكتاب.
+
+
+تحديث نهائي — غلاف «ابنة هابيل»:
+- تم استبدال أي نسخة سابقة بالغلاف الأصلي الذي تم رفعه واعتماده في المحادثة.
+- الملف المعتمد داخل المشروع: assets/covers/ibnat-habil.jpg
+- الغلاف محفوظ كما هو بدون إعادة توليد أو تعديل بصري.
