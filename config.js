@@ -4,8 +4,8 @@ window.SARA_CONFIG = {
   metaPixel: "",
 
   supabase: {
-    url: "",
-    anonKey: "",
+    url: "https://nlhcmvuqugiyflmvqeuv.supabase.co",
+    anonKey: "sb_publishable_XytQvrwwVxyNDyqZEmd4oA_cJlUMfnn",
     table: "readers"
   },
 
@@ -17,7 +17,8 @@ window.SARA_CONFIG = {
     email: ""
   },
 
-  // الروابط الأساسية موجودة داخل الموقع. يمكن إضافة روابط حملات أو متاجر إضافية هنا بدون تعديل التصميم.
+  // الروابط الأساسية موجودة داخل الموقع.
+  // يمكن إضافة روابط حملات أو متاجر إضافية هنا بدون تعديل التصميم.
   buyLinks: {
     "ibnat-habil": [],
     "insan-tabia-iphone": [],
