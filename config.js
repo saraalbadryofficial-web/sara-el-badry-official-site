@@ -1,6 +1,6 @@
 window.SARA_CONFIG = {
   siteUrl: "https://saraelbadryofficials.com/",
-  ga4Id: "G-C1WD3PWF1R",
+  ga4Id: "G-G4CCEX87GT",
   metaPixel: "2145855919352787",
 
   supabase: {
