@@ -1,20 +1,26 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#30182b">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta name="description" content="الموقع الرسمي للكاتبة سارة البدري — الكتب، أحدث الأعمال، الأخبار ونادي القراء.">
+<meta name="description" content="الموقع الرسمي للكاتبة سارة البدري: روايات وكتب سارة البدري، أحدث إصدار «ابنة هابيل»، نبذات الكتب وروابط القراءة والشراء ونادي القراء.">
 <link rel="canonical" href="https://saraelbadryofficials.com/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="سارة البدري | الموقع الرسمي">
-<meta property="og:description" content="الإصدارات والكتب ونادي قراء سارة البدري.">
+<meta property="og:description" content="روايات وكتب سارة البدري، أحدث إصدار «ابنة هابيل»، وروابط القراءة والشراء من الموقع الرسمي.">
 <meta property="og:url" content="https://saraelbadryofficials.com/">
 <meta property="og:site_name" content="Sara El Badry Official">
+<meta property="og:image" content="https://saraelbadryofficials.com/assets/covers/ibnat-habil.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<title>سارة البدري | الموقع الرسمي</title>
+<meta name="twitter:title" content="سارة البدري | الموقع الرسمي وروايات وكتب سارة البدري">
+<meta name="twitter:description" content="روايات وكتب سارة البدري، أحدث إصدار «ابنة هابيل»، وروابط القراءة والشراء.">
+<meta name="twitter:image" content="https://saraelbadryofficials.com/assets/covers/ibnat-habil.jpg">
+<meta name="author" content="سارة البدري">
+<link rel="alternate" hreflang="ar" href="https://saraelbadryofficials.com/">
+<title>سارة البدري | الموقع الرسمي وروايات وكتب سارة البدري</title>
 <script src="config.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,7 +191,7 @@ footer{background:#1f1418;color:#eee1e6;padding:42px 0 24px} .footer-top{display
      <p>أحدث روايات سارة البدري؛ حكاية عن القبول، صورتنا عن أنفسنا، وما الذي يحدث حين تختلط الحقيقة بالمشاعر.</p>
      <div class="stats"><span class="stat">إصدار 2026</span><span class="stat">388 صفحة</span><span class="stat">الرواق للنشر والتوزيع</span></div>
      <div class="mast-actions">
-       <button class="btn primary" onclick="openBook('ibnat-habil')">عن الكتاب</button>
+       <a class="btn primary" href="books/ibnat-habil/" onclick="track('seo_book_page_click',{book_id:'ibnat-habil',book_name:'ابنة هابيل'})">عن الكتاب</a>
        <a class="btn secondary" href="https://alrewaqpublishing.com/product/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/" target="_blank" rel="noopener" onclick="track('click_buy',{book_id:'ibnat-habil',book_name:'ابنة هابيل',channel:'الرواق'})">شراء ورقي</a>
        <a class="btn secondary" href="https://www.abjjad.com/book/1034086383618/%D8%A7%D8%A8%D9%86%D8%A9-%D9%87%D8%A7%D8%A8%D9%8A%D9%84/1033785737218" target="_blank" rel="noopener" onclick="track('click_buy',{book_id:'ibnat-habil',book_name:'ابنة هابيل',channel:'أبجد'})">قراءة إلكترونية</a>
      </div>
@@ -334,7 +340,7 @@ function renderBooks(filter="all"){
  const grid=document.getElementById("bookGrid");grid.innerHTML="";
  books.filter(b=>filter==="all"||b.type===filter).forEach(b=>{
    const card=document.createElement("article");card.className="book-card";
-   card.innerHTML=`<div class="book-img" role="button" tabindex="0" aria-label="عرض تفاصيل ${b.title}"><img alt="غلاف ${b.title}"></div><div class="book-body"><small>${b.typeLabel} · ${b.year}</small><h3>${b.title}</h3><p class="mini-blurb">${b.blurb}</p><button class="btn secondary" onclick="openBook('${b.id}')">اعرفي أكتر</button></div>`;
+   card.innerHTML=`<div class="book-img" role="button" tabindex="0" aria-label="عرض تفاصيل ${b.title}"><img alt="غلاف ${b.title}"></div><div class="book-body"><small>${b.typeLabel} · ${b.year}</small><h3>${b.title}</h3><p class="mini-blurb">${b.blurb}</p><a class="btn secondary" href="books/${b.id}/" onclick="track('seo_book_page_click',{book_id:'${b.id}',book_name:'${b.title}'})">صفحة الكتاب</a></div>`;
    setSmartImage(card.querySelector("img"),b);
    const cover=card.querySelector(".book-img");
    cover.addEventListener("click",()=>openBook(b.id));
@@ -344,7 +350,7 @@ function renderBooks(filter="all"){
 }
 
 function renderTimeline(){
- document.getElementById("timeline").innerHTML=books.map(b=>`<div class="time-item"><b>${b.year}</b><span>${b.title}</span></div>`).join("");
+ document.getElementById("timeline").innerHTML=books.map(b=>`<a class="time-item" href="books/${b.id}/"><b>${b.year}</b><span>${b.title}</span></a>`).join("");
 }
 
 function openBook(id){
@@ -407,11 +413,102 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Person",
- "name":"سارة البدري",
- "url":"https://saraelbadryofficials.com/",
- "sameAs":["https://instagram.com/saraelbadryofficial","https://www.facebook.com/saraelbadryofficial","https://www.tiktok.com/@saraelbadryofficial"]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://saraelbadryofficials.com/#sara-el-badry",
+      "name": "سارة البدري",
+      "url": "https://saraelbadryofficials.com/",
+      "sameAs": [
+        "https://instagram.com/saraelbadryofficial",
+        "https://www.facebook.com/saraelbadryofficial",
+        "https://www.tiktok.com/@saraelbadryofficial"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://saraelbadryofficials.com/#website",
+      "url": "https://saraelbadryofficials.com/",
+      "name": "سارة البدري | الموقع الرسمي",
+      "inLanguage": "ar",
+      "publisher": {
+        "@id": "https://saraelbadryofficials.com/#sara-el-badry"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "كتب سارة البدري",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://saraelbadryofficials.com/books/ibnat-habil/",
+          "name": "ابنة هابيل"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://saraelbadryofficials.com/books/insan-tabia-iphone/",
+          "name": "الإنسان والطبيعة والآيفون"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://saraelbadryofficials.com/books/nesf-hay/",
+          "name": "النصف الحي"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://saraelbadryofficials.com/books/al-mashhad/",
+          "name": "المشهد"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://saraelbadryofficials.com/books/mahma-sajad/",
+          "name": "مهما سجد"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://saraelbadryofficials.com/books/feal-hob/",
+          "name": "فعل حب"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://saraelbadryofficials.com/books/ard-allaza/",
+          "name": "أرض اللذة"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://saraelbadryofficials.com/books/hosn-alshah/",
+          "name": "حصن الشاه"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://saraelbadryofficials.com/books/om-fi-mohemma/",
+          "name": "أم في مهمة"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://saraelbadryofficials.com/books/fakiha-moharrama/",
+          "name": "فاكهة محرمة"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://saraelbadryofficials.com/books/qosasat-harir/",
+          "name": "قصاصة حرير"
+        }
+      ]
+    }
+  ]
 }
 </script>
 </body>
