@@ -55,3 +55,18 @@ footer{background:#1f1418;color:#eee1e6;padding:35px 0}
  .related-grid{grid-template-columns:1fr}
  .hero{padding-top:30px}.panel{padding:22px}
 }
+
+.story-intro{font-size:19px;line-height:2;color:#4b3f46;margin:0 0 22px}
+.story-hook{margin:0 0 28px;padding:18px 20px;border-right:4px solid var(--wine);background:#f7eee9;border-radius:14px;color:var(--plum);font-weight:800;font-size:18px}
+.story-subhead{font-size:22px;color:var(--plum);margin:34px 0 14px}
+.character-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 8px}
+.character-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.character-card b{display:block;color:var(--wine);font-size:18px;margin-bottom:7px}
+.character-card p{margin:0;color:#5e5158;font-size:14px;line-height:1.9}
+.theme-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.theme-list span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 11px;font-size:12px;color:var(--plum);font-weight:700}
+.question-box{margin-top:28px;padding:24px;border-radius:20px;background:linear-gradient(135deg,#30182b,#6f2743);color:#fff}
+.question-box .eyebrow{font-size:12px;font-weight:900;letter-spacing:.08em;color:#efc7cf}
+.question-box h3{font-size:28px;line-height:1.4;margin:8px 0 10px;color:#fff}
+.question-box p{margin:0;color:#f1e7ec;line-height:1.95}
+@media(max-width:820px){.character-grid{grid-template-columns:1fr}}
